@@ -1,0 +1,58 @@
+# Gestión de Estudiantes en C
+
+Este programa permite gestionar registros de estudiantes de manera dinámica y optimizada en memoria.
+
+## Cómo Ejecutar el Programa
+
+### 1. Compilar el código
+
+Ejecuta el siguiente comando en la terminal:
+
+```sh
+gcc gestion_estudiantes.c -o gestion_estudiantes
+```
+
+### 2. Ejecutar el programa
+
+```sh
+./gestion_estudiantes
+```
+
+## Uso del Programa
+
+El programa presenta un menú interactivo con las siguientes opciones:
+
+1. **Agregar estudiante**: Ingresar datos de un estudiante.
+2. **Eliminar estudiante**: Eliminar un estudiante mediante su ID.
+3. **Mostrar estudiantes**: Listar todos los estudiantes almacenados.
+4. **Salir**: Finalizar el programa liberando la memoria.
+
+## Ejemplo de Uso
+
+### Entrada
+
+```
+1
+Ingrese nombre: Juan
+Ingrese apellido: Pérez
+Ingrese edad: 22
+Ingrese ID: 12345678
+Ingrese número de materias: 3
+Ingrese calificación 1: 85
+Ingrese calificación 2: 90
+Ingrese calificación 3: 78
+```
+
+### Salida
+
+```
+Estudiante "Juan Pérez" agregado correctamente. Memoria utilizada: 128 bytes.
+```
+
+```sh
+2
+Ingrese el ID del estudiante a eliminar: 12345678
+Estudiante con ID 12345678 eliminado correctamente. Memoria utilizada: 0 bytes.
+```
+
+##
