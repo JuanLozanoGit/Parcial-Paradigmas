@@ -1,0 +1,31 @@
+### 1. Introducción
+Este documento presenta un análisis comparativo entre dos enfoques de programación utilizados para resolver el problema del ordenamiento de una lista de estudiantes según su calificación y, en caso de empate, por orden alfabético. Se han implementado dos soluciones: una en Python utilizando un enfoque imperativo y otra en Haskell con un paradigma funcional.
+
+### 2. Implementación en Python (Paradigma Imperativo)
+Python es un lenguaje multiparadigma que facilita la programación imperativa, donde se especifica cómo deben ejecutarse los pasos para alcanzar el resultado. En este enfoque:
+
+- Se utilizan estructuras de control iterativas como bucles for.
+- Se modifican directamente los valores en memoria.
+- Se sigue un procedimiento paso a paso para el intercambio de elementos en la lista (Bubble Sort).
+
+Este enfoque hace que el código sea intuitivo y fácil de seguir, pero puede ser menos eficiente y más propenso a errores debido a la manipulación directa de datos.
+
+### 3. Implementación en Haskell (Paradigma Funcional)
+Haskell es un lenguaje puramente funcional que promueve la inmutabilidad y el uso de funciones de orden superior. En esta implementación:
+
+- Se utiliza sortBy y comparing para definir criterios de ordenamiento.
+- No se modifican estructuras de datos en memoria, sino que se crean nuevas versiones ordenadas.
+- Se describe *qué* se desea lograr en lugar de *cómo* hacerlo.
+Este enfoque produce un código más conciso y declarativo, lo que facilita la mantenibilidad y evita efectos secundarios.
+
+### 4. Comparación de Enfoques
+| Característica        | Python (Imperativo) | Haskell (Funcional) |
+|---------------------|------------------|----------------|
+| Estilo de programación | Paso a paso, basado en estado | Declarativo, basado en funciones |
+| Mutabilidad        | Modifica estructuras en memoria | Inmutable, crea nuevas estructuras |
+| Expresividad       | Verboso, requiere control detallado | Conciso y abstracto |
+| Reutilización      | Bajo nivel de reutilización | Alto nivel de reutilización de funciones |
+| Manejo de errores  | Puede introducir errores por cambios en estado | Seguridad gracias a la inmutabilidad |
+
+### 5. Conclusión
+La programación imperativa e
