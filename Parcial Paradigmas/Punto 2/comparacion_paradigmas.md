@@ -47,11 +47,4 @@ En esta implementación:
 | **Reutilización**        | Bajo nivel de reutilización                    | Alto nivel de reutilización de funciones |
 | **Manejo de errores**    | Puede introducir errores por cambios en estado | Seguridad gracias a la inmutabilidad     |
 
----
 
-## 5. Conclusión  
-El enfoque imperativo en **Python** es intuitivo y fácil de comprender para quienes están acostumbrados a la programación tradicional, pero puede ser propenso a errores y menos eficiente en términos de reutilización.  
-
-Por otro lado, el enfoque funcional en **Haskell** ofrece un código más limpio y seguro, reduciendo efectos secundarios y mejorando la mantenibilidad, aunque puede tener una curva de aprendizaje más pronunciada.  
-
-Ambos paradigmas tienen su lugar dependiendo del contexto y las necesidades del proyecto. 🚀  
