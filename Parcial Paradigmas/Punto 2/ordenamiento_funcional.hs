@@ -1,24 +1,23 @@
 import Data.List (sortBy)
 import Data.Ord (comparing)
 
-
 type Estudiante = (String, Int)
-
--- Función de ordenamiento
+obtenerEstudiantes :: IO [Estudiante]
+obtenerEstudiantes = do
+    putStrLn "Ingrese el número de estudiantes: "
+    n <- readLn
+    let leerEstudiante 0 acc = return acc
+        leerEstudiante m acc = do
+            putStrLn "Nombre del estudiante: "
+            nombre <- getLine
+            putStrLn "Calificación del estudiante: "
+            calificacion <- readLn
+            leerEstudiante (m-1) ((nombre, calificacion) : acc)
+    leerEstudiante n []
 ordenarEstudiantes :: [Estudiante] -> [Estudiante]
-ordenarEstudiantes = sortBy (\(nombreA, notaA) (nombreB, notaB) ->
-    comparing (negate . snd) (nombreA, notaA) (nombreB, notaB) <> comparing fst (nombreA, notaA) (nombreB, notaB)
-    )
-
--- Ejemplo
-estudiantes :: [Estudiante]
-estudiantes =
-    [ ("Ana", 85)
-    , ("Luis", 90)
-    , ("Carlos", 85)
-    , ("Sofía", 92)
-    , ("María", 90)
-    ]
+ordenarEstudiantes = sortBy (comparing (negate . snd) <> comparing fst)
 
 main :: IO ()
-main = print (ordenarEstudiantes estudiantes)
+main = do
+    estudiantes <- obtenerEstudiantes
+    print (ordenarEstudiantes estudiantes)
