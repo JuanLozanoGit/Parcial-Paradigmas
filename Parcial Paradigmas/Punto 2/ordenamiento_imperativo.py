@@ -8,7 +8,7 @@ def bubble_sort(estudiantes):
                 estudiantes[j], estudiantes[j + 1] = estudiantes[j + 1], estudiantes[j]
     return estudiantes
 
-# Ejemplo de uso
+# Ejemplo
 estudiantes = [
     ("Ana", 85),
     ("Luis", 90),
