@@ -4,7 +4,7 @@ Este repositorio contiene tres ejercicios que abordan distintos paradigmas de pr
 
 ## 👥 Información del Grupo
 - **Nombre(s):** Juan Lozano, Julio Florez, Andres Espitia, Maria Parra.
-- **Códigos:** 1014990137, 1030535199 , , 1072960488
+- **Códigos:** 1014990137, 1030535199 , 1072650903 , 1072960488
 - **Asignatura:** Paradigmas de Programación
 - **Periodo:** 2025-1
 
