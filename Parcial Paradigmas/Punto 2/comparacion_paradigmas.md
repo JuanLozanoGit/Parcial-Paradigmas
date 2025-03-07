@@ -26,8 +26,3 @@ Este enfoque produce un código más conciso y declarativo, lo que facilita la m
 | Reutilización          | Bajo nivel de reutilización                    | Alto nivel de reutilización de funciones |
 | Manejo de errores      | Puede introducir errores por cambios en estado | Seguridad gracias a la inmutabilidad     |
 
-5. Conclusión
-La programación imperativa en Python ofrece un enfoque claro y controlado para el proceso de ordenamiento, mientras que Haskell 
-facilita una implementación más declarativa y sucinta. La selección del paradigma adecuado dependerá del contexto y de las 
-necesidades específicas de cada problema: si se requiere flexibilidad y un entorno familiar, Python resulta ser una opción 
-adecuada; en cambio, si se priorizan la claridad, la seguridad y la reutilización, Haskell presenta ventajas notables.
