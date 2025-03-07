@@ -1,26 +1,20 @@
-import Data.List (sortBy)
-import Data.Ord (comparing)
 
-type Estudiante = (String, Int)
-
-obtenerEstudiantes :: IO [Estudiante]
-obtenerEstudiantes = do
-    putStrLn "Ingrese el número de estudiantes: "
-    n <- readLn
-    let leerEstudiante 0 acc = return acc
-        leerEstudiante m acc = do
-            putStrLn "Nombre del estudiante: "
-            nombre <- getLine
-            putStrLn "Calificación del estudiante: "
-            calificacion <- readLn
-            leerEstudiante (m-1) ((nombre, calificacion) : acc)
-    leerEstudiante n []
-
-ordenarEstudiantes :: [Estudiante] -> [Estudiante]
-ordenarEstudiantes = sortBy (comparing (negate . snd) <> comparing fst)
-
--- Main
-main :: IO ()
-main = do
-    estudiantes <- obtenerEstudiantes
-    print (ordenarEstudiantes estudiantes)
+def bubble_sort(estudiantes):
+    n = len(estudiantes)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if (estudiantes[j][1] < estudiantes[j + 1][1]) or \
+               (estudiantes[j][1] == estudiantes[j + 1][1] and estudiantes[j][0] > estudiantes[j + 1][0]):
+                estudiantes[j], estudiantes[j + 1] = estudiantes[j + 1], estudiantes[j]
+    return estudiantes
+def obtener_estudiantes():
+    estudiantes = []
+    n = int(input("Ingrese el número de estudiantes: "))
+    for _ in range(n):
+        nombre = input("Nombre del estudiante: ")
+        calificacion = int(input("Calificación del estudiante: "))
+        estudiantes.append((nombre, calificacion))
+    return estudiantes
+estudiantes = obtener_estudiantes()
+resultado = bubble_sort(estudiantes)
+print("Lista ordenada:", resultado)
