@@ -21,6 +21,3 @@ Se realizaron pruebas comparativas en dos versiones del código:
 2. **Disminución de fragmentación**: La implementación de compactación tras eliminación de registros redujo significativamente la fragmentación interna.
 3. **Mejora en el tiempo de ejecución**: La optimización en la asignación de memoria permitió una ejecución más eficiente.
 
-## Conclusión
-Las mejoras implementadas optimizaron significativamente el uso de memoria y el rendimiento del programa. Se recomienda continuar con pruebas adicionales en distintos escenarios para validar su eficiencia en condiciones de mayor carga de datos.
-
