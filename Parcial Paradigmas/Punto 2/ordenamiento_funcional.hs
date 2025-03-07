@@ -1,7 +1,7 @@
 import Data.List (sortBy)
 import Data.Ord (comparing)
 
--- Definir tipo de dato para los estudiantes
+
 type Estudiante = (String, Int)
 
 -- Función de ordenamiento
