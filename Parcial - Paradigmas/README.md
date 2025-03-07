@@ -23,12 +23,10 @@ El repositorio se divide en tres carpetas, cada una con un ejercicio distinto:
  ├── ordenamiento_imperativo.py
  ├── ordenamiento_funcional.hs
  ├── comparacion_paradigmas.md
- ├── README.md
 
 📂 Ejercicio_3  (Gestión dinámica de memoria en C)
  ├── gestion_estudiantes.c
  ├── informe_comparativo.md
- ├── README.md
 ```
 
 ## 📌 Enunciados de los Ejercicios
