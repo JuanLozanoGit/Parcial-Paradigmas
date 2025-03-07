@@ -10,7 +10,7 @@ ordenarEstudiantes = sortBy (\(nombreA, notaA) (nombreB, notaB) ->
     comparing (negate . snd) (nombreA, notaA) (nombreB, notaB) <> comparing fst (nombreA, notaA) (nombreB, notaB)
     )
 
--- Ejemplo de uso
+-- Ejemplo
 estudiantes :: [Estudiante]
 estudiantes =
     [ ("Ana", 85)
